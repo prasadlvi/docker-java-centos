@@ -1,10 +1,11 @@
 FROM centos:7
 
-MAINTAINER nimmis <kjell.havneskold@gmail.com>
+MAINTAINER nimmis <brett.wooldridge@gmail.com>
 
 RUN yum update -y && \
 yum install -y wget && \
 yum install -y java-1.8.0-openjdk && \
+yum install -y iproute && \
 yum clean all
 
 # Set environment variables.
