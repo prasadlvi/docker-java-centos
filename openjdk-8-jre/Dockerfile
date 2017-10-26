@@ -8,6 +8,7 @@ RUN yum update -y && \
     yum install -y iproute && \
     yum install -y openssl098e && \
     yum install -y postgresql && \
+    yum install -y unzip && \
     yum clean all && \
     ln -s /usr/lib64/libexpat.so.1 /usr/lib64/libexpat.so.0
 
