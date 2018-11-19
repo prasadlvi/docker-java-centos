@@ -9,6 +9,8 @@ RUN yum update -y && \
     cd /usr/local/jdk-11.0.1 && \
     alternatives --install /usr/bin/java java /usr/local/jdk-11.0.1/bin/java 2 && \
     alternatives --set java /usr/local/jdk-11.0.1/bin/java && \
+    yum install -y freetype && \
+    yum install -y urw-fonts && \
     yum install -y iproute && \
     yum install -y openssl098e && \
     yum install -y postgresql && \
